@@ -6,6 +6,9 @@ https://krhasan.github.io/sandbox-CSS/page-image.html
 ----------------------------------
 https://sandbox-react-documents.web.app/front-end-with-react
 
+# mongoDB 
+https://www.mongodb.com/docs/drivers/node/current/usage-examples/
+
 # create project from cmd 
 npm create vite@latest my-project-name -- --template react
 
@@ -46,6 +49,8 @@ https://daisyui.com/components/
 # install daisy UI in project
 ----------------------------------
 https://daisyui.com/docs/install/
+
+to disable require's error -->> (eslint.config.js) >>  {browser: true, es2020: true, node : true},
 
 # for react icons 
 -----------------
