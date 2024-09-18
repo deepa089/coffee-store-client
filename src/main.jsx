@@ -10,20 +10,26 @@ import Root from './root.jsx';
 import ErrorPage from './ErrorPage.jsx';
 import AddCoffee from './AddCoffee.jsx';
 import UpdateCoffee from './UpdateCoffee.jsx';
+import Home from './Home.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "addCoffee",
-    element : <AddCoffee></AddCoffee>
-  },
-  {
-    path: "updateCoffee",
-    element : <UpdateCoffee></UpdateCoffee>
+    children: [{
+      path: "/",
+      element: <Home></Home>
+    },
+    {
+      path: "addCoffee",
+      element: <AddCoffee></AddCoffee>
+    },
+    {
+      path: "updateCoffee",
+      element: <UpdateCoffee></UpdateCoffee>
+    }
+  ]
   }
 ]);
 
