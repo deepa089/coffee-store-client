@@ -19,7 +19,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [{
       path: "/",
-      element: <Home></Home>
+      element: <Home></Home>,
+      loader: ()=> fetch('http://localhost:9001/coffees')
     },
     {
       path: "addCoffee",

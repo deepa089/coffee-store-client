@@ -54,6 +54,8 @@ to disable require's error -->> (eslint.config.js) >>  {browser: true, es2020: t
 
 # for react icons 
 -----------------
+https://react-icons.github.io/react-icons/
+
 npm install react-icons --save
 
 # install chart

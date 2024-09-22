@@ -24,7 +24,10 @@ const AddCoffee = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(json.parse(data));
+                console.log(data);
+                if(data.insertedId > 0){
+                    form.reset();
+                }
             })
     }
     return (
