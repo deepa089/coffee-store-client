@@ -7,10 +7,12 @@ import { Link, useLoaderData } from 'react-router-dom'
 import { TiCoffee } from 'react-icons/ti'
 import './Home.css'
 import Coffee from './Coffee'
+import { useState } from 'react'
 
 
 const Home = () => {
-    const coffeeList = useLoaderData();
+    const loadedCoffeeList = useLoaderData();
+    const [coffeeList, setCoffeeList] = useState(loadedCoffeeList)
     return (
         <div>
             <div className="h-800 bg-cover bg-center bg-[url('./assets/images/more/3.png')]">
@@ -56,7 +58,7 @@ const Home = () => {
                     <div><Link className='flex justify-center ' to="/addCoffee"><button className='hover:bg-slate-300 flex bg-[#E3B577] px-3 py-2 rounded border-red-950 border-solid border-2 text-gray-100'>Add Coffee <TiCoffee className='mt-1 ml-1 text-[#450a0a]'></TiCoffee> </button></Link></div>
                     <div className='grid grid-cols-2 gap-6 px-40 py-10'>
                         {
-                            coffeeList.map(coffee=> <Coffee key={coffee._id} coffee={coffee}></Coffee>)
+                            coffeeList.map(coffee=> <Coffee key={coffee._id} coffee={coffee} coffeeList={coffeeList} setCoffeeList = {setCoffeeList}></Coffee>)
                         }
                     </div>
                 </div>
