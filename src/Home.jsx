@@ -3,6 +3,16 @@ import icon1 from './assets/images/icons/1.png'
 import icon2 from './assets/images/icons/2.png'
 import icon3 from './assets/images/icons/3.png'
 import icon4 from './assets/images/icons/4.png'
+import cup1 from './assets/images/cups/Rectangle 9.png'
+import cup2 from './assets/images/cups/Rectangle 10.png'
+import cup3 from './assets/images/cups/Rectangle 11.png'
+import cup4 from './assets/images/cups/Rectangle 12.png'
+import cup5 from './assets/images/cups/Rectangle 13.png'
+import cup6 from './assets/images/cups/Rectangle 14.png'
+import cup7 from './assets/images/cups/Rectangle 15.png'
+import cup8 from './assets/images/cups/Rectangle 16.png'
+
+
 import { Link, useLoaderData } from 'react-router-dom'
 import { TiCoffee } from 'react-icons/ti'
 import './Home.css'
@@ -63,6 +73,20 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <div className='mb-16'>
+                <h6 className='text-xs'>Follow Us Now</h6>
+                <h2 className='font-rancho text-4xl'>Follow on Instagram</h2>
+                <div className='px-40 py-10 grid grid-cols-4 gap-6'>
+                    <img src={cup1} className='h-56 w-52'></img>
+                    <img src={cup2} className='h-56 w-52'></img>
+                    <img src={cup3} className='h-56 w-52'></img>
+                    <img src={cup4} className='h-56 w-52'></img>
+                    <img src={cup5} className='h-56 w-52'></img>
+                    <img src={cup6} className='h-56 w-52'></img>
+                    <img src={cup7} className='h-56 w-52'></img>
+                    <img src={cup8} className='h-56 w-52'></img>
+                </div>
+            </div>            
         </div>
     );
 };

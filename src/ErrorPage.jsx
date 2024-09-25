@@ -1,9 +1,10 @@
 import React from 'react';
+import errorPage from './assets/images/404/404.gif'
 
 const ErrorPage = () => {
     return (
         <div>
-            <h2> OOOPPPPSSS Error Page</h2>
+           <img src={errorPage}></img>
         </div>
     );
 };
