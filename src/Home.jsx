@@ -63,8 +63,8 @@ const Home = () => {
             </div>
             <div className="homeBackground">
                 <div className='mt-28 space-y-2'>
-                    <h3>--- Sip & Savor ---</h3>
-                    <h1 className='text-5xl text-[#331A15] font-rancho'>Our Popular Products </h1>
+                    <h3 className='text-center'>--- Sip & Savor ---</h3>
+                    <h1 className='text-5xl text-[#331A15] font-rancho text-center'>Our Popular Products </h1>
                     <div><Link className='flex justify-center ' to="/addCoffee"><button className='hover:bg-slate-300 flex bg-[#E3B577] px-3 py-2 rounded border-red-950 border-solid border-2 text-gray-100'>Add Coffee <TiCoffee className='mt-1 ml-1 text-[#450a0a]'></TiCoffee> </button></Link></div>
                     <div className='grid grid-cols-2 gap-6 px-40 py-10'>
                         {
@@ -74,8 +74,8 @@ const Home = () => {
                 </div>
             </div>
             <div className='mb-16'>
-                <h6 className='text-xs'>Follow Us Now</h6>
-                <h2 className='font-rancho text-4xl'>Follow on Instagram</h2>
+                <h6 className='text-xs text-center'>Follow Us Now</h6>
+                <h2 className='font-rancho text-4xl text-center'>Follow on Instagram</h2>
                 <div className='px-40 py-10 grid grid-cols-4 gap-6'>
                     <img src={cup1} className='h-56 w-52'></img>
                     <img src={cup2} className='h-56 w-52'></img>

@@ -1,4 +1,6 @@
+
 .homeBackground{
-    background-image: url('./assets/images/more/4.png');
+    background-image: url('./assets/images/more/4.png') , url('./assets/images/more/5.png') ;
+    background-position:top left, right bottom;
     background-repeat: no-repeat;
 }

@@ -7,8 +7,8 @@ import { MdLocationOn, MdMail } from 'react-icons/md';
 
 const Footer = () => {
     return (
-        <div className=''>
-            <div className="bg-[url('./assets/images/more/10.png')] px-40 pt-10 pb-10 ">
+        <div className='mt-32'>
+            <div className="bg-[url('./assets/images/more/13.jpg')] px-40 pt-10 pb-10 ">
                 <img src={fLogo} className='w-16 h-24'></img>
                 <div className='grid grid-cols-2 gap-0'>
                     <div className='space-y-4 '>
@@ -35,7 +35,7 @@ const Footer = () => {
                             placeholder="Message"
                             className="textarea textarea-bordered textarea-md w-full max-w-xs"></textarea>
                         <br />
-                        <button className="btn btn-outline btn-primary rounded-lg font-rancho">Send</button>
+                        <button className="btn btn-outline btn-primary rounded-full font-rancho">Send Message</button>
 
                     </div>
                 </div>

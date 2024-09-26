@@ -55,7 +55,7 @@ const Coffee = ({ coffee,coffeeList, setCoffeeList }) => {
                 <div className='flex'> <label className='font-bold'>Available:</label><p>{available}</p></div>
             </div>
             <div className='ml-4 space-y-4'>
-               <div> <Link> <FaEye></FaEye></Link> </div>
+               <div> <Link to={`/viewDetails/${_id}`}> <FaEye></FaEye></Link> </div>
                <div><Link to={`/updateCoffee/${_id}`}> <FaPen></FaPen></Link></div>
                <div> <button onClick={handleDeleteCoffee}><FaTrashAlt></FaTrashAlt></button> </div>
             </div>
