@@ -12,6 +12,7 @@ import AddCoffee from './AddCoffee.jsx';
 import UpdateCoffee from './UpdateCoffee.jsx';
 import Home from './Home.jsx';
 import ViewDetails from './ViewDetails.jsx';
+import AuthProvider from './AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
     children: [{
       path: "/",
       element: <Home></Home>,
-      loader: ()=> fetch('http://localhost:9001/coffees')
+      loader: () => fetch('http://localhost:9001/coffees')
     },
     {
       path: "addCoffee",
@@ -30,20 +31,22 @@ const router = createBrowserRouter([
     {
       path: "updateCoffee/:id",
       element: <UpdateCoffee></UpdateCoffee>,
-      loader: ({params}) =>fetch(`http://localhost:9001/updateCoffee/${params.id}`)
+      loader: ({ params }) => fetch(`http://localhost:9001/updateCoffee/${params.id}`)
     },
     {
       path: "viewDetails/:id",
       element: <ViewDetails></ViewDetails>,
-      loader: ({params}) =>fetch(`http://localhost:9001/updateCoffee/${params.id}`)
+      loader: ({ params }) => fetch(`http://localhost:9001/updateCoffee/${params.id}`)
     }
-  ]
+    ]
   }
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
 )
